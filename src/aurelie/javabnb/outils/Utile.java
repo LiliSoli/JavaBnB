@@ -4,11 +4,18 @@ import java.util.Date;
 
 public class Utile {
 
-        // Exercice 3.3: Constructeur privé
+    // Exercice 3.3: Constructeur privé
         private Utile() {
         }
 
         // Méthode 1
+    /**
+     *
+     * @param jour le jour de ma date entre 1 et 31
+     * @param mois le mois, entre 1 et 12
+     * @param annee l'année
+     * @return date bien initialisée
+     */
         public static Date construireDate(int jour, int mois, int annee) {
         return new Date(annee -1900, mois -1, jour);
         }

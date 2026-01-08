@@ -1,7 +1,7 @@
 package aurelie.javabnb.utilisateurs;
 
 public class Hote extends Personne {
-    private int delaiDeReponse;
+    private final int delaiDeReponse;
 
     public Hote(String nom, String prenom, int age, int delaiDeReponse) {
         super(nom, prenom, age);
@@ -10,12 +10,12 @@ public class Hote extends Personne {
 
     @Override
     public void afficher() {
-            System.out.print(getPrenom() + " " + getNom() + " (" + getAge() + " ans)");
+        super.afficher();
 
-        if (this.delaiDeReponse >1) {
-            System.out.print(" qui s'engage à répondre dans " + this.delaiDeReponse + " heures");
+        if (this.delaiDeReponse > 1) {
+            System.out.println(" qui s'engage à répondre dans les " + this.delaiDeReponse + " heures");
         } else {
-            System.out.print(" qui s'engage à répondre dans l'heure");
+            System.out.println(" qui s'engage à répondre dans l'heure");
         }
     }
 }
