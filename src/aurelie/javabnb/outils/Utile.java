@@ -4,6 +4,10 @@ import java.util.Date;
 
 public class Utile {
 
+        // Exercice 3.3: Constructeur privé
+        private Utile() {
+        }
+
         // Méthode 1
         public static Date construireDate(int jour, int mois, int annee) {
         return new Date(annee -1900, mois -1, jour);
