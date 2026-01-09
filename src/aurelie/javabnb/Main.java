@@ -5,17 +5,23 @@ import aurelie.javabnb.logements.Logement;
 import aurelie.javabnb.logements.Maison;
 import aurelie.javabnb.reservations.Sejour;
 import aurelie.javabnb.utilisateurs.Hote;
+import aurelie.javabnb.utilisateurs.Personne;
 
 import static aurelie.javabnb.outils.Utile.construireDate;
 
 public class Main {
     public static void main(String[] args) {
 
-        //Tp3
-        Hote hote1 = new Hote("Moon", "Sailor", 30, 2);
-        Hote hote2 = new Hote("CraCra", "Mimi", 65, 18);
-        Hote hote3 = new Hote("Mins", "Moo", 20, 1);
-        Hote hote4 = new Hote("Ro", "Toto", 50, 5);
+        //Tp3-2
+        //Hote hote1 = new Hote("Moon", "Sailor", 30, 2);
+        //Hote hote2 = new Hote("CraCra", "Mimi", 65, 18);
+        //Hote hote3 = new Hote("Mins", "Moo", 20, 1);
+        //Hote hote4 = new Hote("Ro", "Toto", 50, 5);
+
+        Personne hote1 = new Hote("Moon", "Sailor", 30, 2);
+        Personne hote2 = new Hote("CraCra", "Mimi", 65, 18);
+        Personne hote3 = new Hote("Mins", "Moo", 20, 1);
+        Personne hote4 = new Hote("Ro", "Toto", 50, 5);
 
 
         Logement logement1 = new Appartement(hote1, 60, "1 rue de la paix 37000 Tours", 70, 4, 10, 2);

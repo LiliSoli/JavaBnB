@@ -1,12 +1,12 @@
 package aurelie.javabnb.logements;
 
-import aurelie.javabnb.utilisateurs.Hote;
+import aurelie.javabnb.utilisateurs.Personne;
 
 public class Maison extends Logement {
     int superficieJardin;
     boolean possedePiscine;
 
-    public Maison(Hote hote, int tarifParNuit, String adresse, int superficie, int nbVoyageursMax, int superficieJardin, boolean possedePiscine) {
+    public Maison(Personne hote, int tarifParNuit, String adresse, int superficie, int nbVoyageursMax, int superficieJardin, boolean possedePiscine) {
         super(hote, tarifParNuit, adresse, superficie, nbVoyageursMax);
         this.superficieJardin = superficieJardin;
         this.possedePiscine = possedePiscine;

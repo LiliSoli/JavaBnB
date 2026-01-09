@@ -1,15 +1,15 @@
 package aurelie.javabnb.logements;
 
-import aurelie.javabnb.utilisateurs.Hote;
+import aurelie.javabnb.utilisateurs.Personne;
 
 public class Logement {
-    private Hote hote;
+    private Personne hote;
     private int tarifParNuit;
     private String adresse;
     private int superficie;
     private int nbVoyageursMax;
 
-    public Logement(Hote hote, int tarifParNuit, String adresse, int superficie, int nbVoyageursMax) {
+    public Logement(Personne hote, int tarifParNuit, String adresse, int superficie, int nbVoyageursMax) {
         this.hote = hote;
         this.tarifParNuit = tarifParNuit;
         this.adresse = adresse;
