@@ -14,7 +14,7 @@ public class Appartement extends Logement {
 
     @Override
     public void afficher() {
-        super.afficher();
+        getHote().afficher();
         System.out.println("Le logement est un appartement situé " + getAdresse() + " au" + getNumeroEtage() + ".");
         System.out.println("Superficie : " + getSuperficie() + " m²");
 

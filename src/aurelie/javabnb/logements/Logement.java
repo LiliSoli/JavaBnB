@@ -2,7 +2,7 @@ package aurelie.javabnb.logements;
 
 import aurelie.javabnb.utilisateurs.Personne;
 
-public class Logement {
+public abstract class Logement {
     private Personne hote;
     private int tarifParNuit;
     private String adresse;
@@ -31,9 +31,10 @@ public class Logement {
         return adresse;
     }
 
-    public void afficher() {
-        hote.afficher();
-
+    public Personne getHote() {
+        return hote;
     }
+
+    public abstract void afficher();
 
 }

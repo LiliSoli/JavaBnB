@@ -38,10 +38,8 @@ public class Main {
 
 
         //Exercice 2.4
-        Sejour sejour1 = new Sejour(construireDate(5, 7, 2024), 4, logement1, 4);
+        Sejour sejour1 = new Sejour(construireDate(5, 7, 2024), 4, logement3, 4);
 
         sejour1.afficher();
-
     }
-
 }
